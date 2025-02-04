@@ -1,4 +1,5 @@
 from google.cloud import compute_v1
+boto 3 
 
 def list_gcp_regions():
     client = compute_v1.RegionsClient()
