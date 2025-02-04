@@ -2,7 +2,7 @@ from google.cloud import compute_v1
 
 def list_gcp_regions():
     client = compute_v1.RegionsClient()
-    project = "your-gcp-project-id"  # Replace with your project ID
+    project = "your-multiproject"  # Replace with your project ID
 
     request = compute_v1.ListRegionsRequest(project=project)
     response = client.list(request=request)
